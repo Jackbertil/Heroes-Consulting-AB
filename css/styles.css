@@ -1,0 +1,330 @@
+
+body{
+    width: 100%;
+    margin: auto;    
+    margin-bottom: 0px;
+    background: rgb(231, 231, 231);
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+  
+
+#top-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 85px 3fr;
+    text-align: center;
+}
+
+#page-header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 10px;
+    background-color: rgb(69, 69, 69);
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+#page-header img{ 
+    display: inline-block;   
+    margin: 0 auto;
+}
+  
+
+#nav-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    margin: auto 0;
+    padding: 0;
+    height: 100%;
+}
+
+#nav-grid a{
+    
+    margin: 0 auto 0 auto;
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-variant: petite-caps;
+    padding: 0 10px 0 10px;
+
+}
+#nav-grid a:hover{
+    background: rgb(49, 49, 49);
+}
+
+.logo{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.logo img{
+    width: 50px;
+    margin-left: -5px;
+}
+#datorikon{
+    float: left;
+    margin-left: 30px;
+    width: 33%;
+    max-width: 85px;
+    min-width: 50px;
+    padding:0;
+}
+
+#textlogga{
+    float: left;
+    margin-left: 30px;
+    width: 60px;
+    padding:0;
+}
+
+
+.social-media-buttons{
+    text-align: right;
+}
+
+.social-media-buttons img{
+    width: 29px;
+}
+.social-media-buttons img:hover{
+    opacity: 0.69;
+}
+
+
+.figur {
+    margin: 0 0;
+    padding: 0;
+}
+
+.figur img{
+    width: 100%;
+}
+
+.figur figcaption{
+    text-align: left;
+    font-size: 0.5em;
+}
+
+/* Footer */
+.fotnot{
+    margin-top: 1em;    
+    padding-top: 1px;
+    padding-bottom: 50px;
+    background: rgb(69, 69, 69);
+    color:white;
+}
+.fotnot p{
+    padding-left: 10px;
+    font-family: Helvetica, sans-serif, Arial;
+    font-variant-caps: petite-caps;
+}
+
+#fotnottext{
+    font-size: 0.8em;
+    color: rgb(172, 172, 172)
+}
+
+.fotnot a {
+    text-decoration: none;
+    font-size: 0.7em;
+    font-family: Helvetica, sans-serif, Arial;
+    color: white;
+
+
+}
+#telnrfotnot {
+    margin-left: 2em;
+}
+
+
+/* Index */
+
+.large-image{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    grid-gap: 10px;
+    margin-top: 0;
+}
+.image-grid a{
+    margin: 0 0;
+    padding: 0;
+}
+.image-grid img{
+    width: 100%;
+}
+.image-grid img:hover{
+    opacity: 0.95;
+}
+
+
+.nyheter-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+    column-gap: 4em;
+    text-align: left;
+}
+
+.nyheter-grid figure{
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Kontakt */
+
+#kontaktinfo h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-variant-caps: petite-caps; 
+
+}
+#kontaktinfo h2{
+    font-variant-caps: petite-caps; 
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.inforuta {
+    color: white;
+    padding: 1.0em;
+    background: rgb(69, 69, 69);
+    box-sizing: border-box;
+    
+}
+.inforuta h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-variant-caps:petite-caps;
+}
+
+.inforuta ul{
+    list-style: none;
+    padding: 0;
+}
+.inforuta ul li a{
+    color: rgb(18, 140, 189);
+    font-weight: bold;
+}
+
+.kontaktperson-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    
+}
+
+
+.kontaktperson h2{
+    padding-top: 2em;
+}
+.kontaktperson img{
+    width: 35%;
+}
+.kontaktperson a{
+    color: rgb(18, 140, 189);
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Om oss */
+
+#om-oss-ruta{
+    margin-bottom: 2em;
+
+}
+
+
+/* Tjänster */
+
+#tjänster-ruta{
+    margin-bottom: 2em;
+
+}
+
+
+/* Innehåll */
+
+.innehåll-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    grid-gap: 10px;
+
+}
+.innehåll-grid article:hover{
+    background: rgb(220, 220, 220);
+}
+
+.innehåll-grid article{
+    border-width: medium;
+    border-radius: 12px;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    body{
+        width:80%;
+    }
+
+    #nav-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: space-evenly;
+    }
+    #nav-grid a{
+        font-size: 1em;
+        margin: auto 0;
+
+        padding: 10px 0 10px 0;
+    }
+
+    #textlogga{
+        width: 85px;
+    }
+    
+    /* Index */
+    .image-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /* Kontakt */
+    .kontaktperson-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Om oss */
+    .nyheter-grid{
+        grid-template-columns: 1fr 1fr;
+  }
+
+    /* tjänster */
+  .innehåll-grid{
+    grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media screen and (max-width: 330px){
+    #top-grid{
+        grid-template-rows: 110px 3fr;
+    }
+
+    .fotnot{
+        height: 200px;
+    }
+}
